@@ -1,0 +1,144 @@
+SIM_NAME=h24
+MODEL=MYO24       # choose between MFS or AFS
+WIND=ECMWF012     # choose between ECMWF 0.5° or ECMWF 0.25°
+sim_length=0072   # choose the simulation length (in hours, 4 characters)
+
+# insert oil slick data: time and date of observation
+
+day=15
+month=04
+year=20
+hour=15
+minutes=30
+
+# insert oil slick data: coordinate of the center of the slick
+
+lat_degree=43
+lat_minutes=23.00
+lon_degree=8
+lon_minutes=42.00
+
+# insert oil slick data: spill rate, spill duration and age
+
+duration=0000         # spill duration, in hours, 4 characters, if the spill is instantaneous type 0000
+spillrate=1800.0       # spill rate in tons/hours,  if the spill is instantaneous write the total tons spilled
+age=0
+grid_size=150.0         # spatial resolution (m) of the oil tracer grid
+
+# insert oil type (API or NAME)
+OIL=API
+OIL_TYPE=31.0
+
+SAT_DATA=NO        # for Point Source choose NO, for slick from satellite data choose YES
+ContourSlick=YES      # for Point Source choose NO, for manually slick contour insertion choose YES
+
+# SLICK CONTOUR from SATELLITE DATA
+# if you have selected SAT_DATA=YES fill the following section, otherwise leave it blank.
+
+namefileGML=ASA_WSM_1PNACS20080806_095116_000000612071_00022_33643_0001.N1.00000_Oil.gml
+# write the satellite file name
+
+N_OS=1   # write the number of the slick to be simulated
+
+# MANUALLY INSERTION OF SLICK CONTOUR
+#if you have selected ContourSlick=YES fill the following section, otherwise leave it blank.
+
+NSlick=6              # Number of Slicks
+
+# insert latitude and longitude of slick points contour.
+S1lon[1]=8.697769108971531
+S1lat[1]=44.38180636548995
+S1lon[2]=8.701746042927702
+S1lat[2]=44.3817018678924
+S1lon[3]=8.703240447534984
+S1lat[3]=44.38373103324444
+S1lon[4]=8.700331310237207
+S1lat[4]=44.38566210470182
+S1lon[5]=8.697346320770203
+S1lat[5]=44.38424307876311
+
+S2lon[1]=8.531176877717705
+S2lat[1]=44.19844585311283
+S2lon[2]=8.535530068393458
+S2lat[2]=44.19827052961013
+S2lon[3]=8.536148775340273
+S2lat[3]=44.20049974638381
+S2lon[4]=8.533588896946993
+S2lat[4]=44.20206266180607
+S2lon[5]=8.530800413561398
+S2lat[5]=44.20067443445558
+
+S3lon[1]=8.481382373238377
+S3lat[1]=44.1648772481236
+S3lon[2]=8.484864020230987
+S3lat[2]=44.16470309243847
+S3lon[3]=8.48592168146668
+S3lat[3]=44.1667233219382
+S3lon[4]=8.483611848888772
+S3lat[4]=44.16880294874816
+S3lon[5]=8.480134485848875
+S3lat[5]=44.16692644021905
+
+S4lon[1]=8.448113189336972
+S4lat[1]=44.1478932406491
+S4lon[2]=8.452587926683952
+S4lat[2]=44.148078174566
+S4lon[3]=8.452793471726279
+S4lat[3]=44.15037872528667
+S4lon[4]=8.449965144807429
+S4lat[4]=44.15253250245589
+S4lon[5]=8.447203035012185
+S4lat[5]=44.15010210929362
+
+S5lon[1]=8.430095352850826
+S5lat[1]=44.13429729484307
+S5lon[2]=8.431262968275792
+S5lat[2]=44.1318173808918
+S5lon[3]=8.43457604608383
+S5lat[3]=44.13109727553859
+S5lon[4]=8.436601577486595
+S5lat[4]=44.1329850364119
+S5lon[5]=8.434357603504486
+S5lat[5]=44.13556689275912
+
+S6lon[1]=8.414445346608657
+S6lat[1]=44.13159162240535
+S6lon[2]=8.417969970965732
+S6lat[2]=44.13134883274778
+S6lon[3]=8.419824903900825
+S6lat[3]=44.13411605562408
+S6lon[4]=8.416091735810408
+S6lat[4]=44.13571435670696
+S6lon[5]=8.413693888602536
+S6lat[5]=44.13372929804658
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
